@@ -1,0 +1,10 @@
+.header__logo {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.header__logo:hover {
+  color: hsl(210, 22%, 96%);
+  text-decoration-line: none;
+}
