@@ -1,3 +1,20 @@
+.main__job {
+  width: 327px;
+  background-color: var(--clr-card-background);
+  border-radius: 0.375rem;
+  padding: 3.0625rem 0.5625rem 2rem 2rem;
+  position: relative;
+}
+
 .main__job--logo {
   background-color: hsl(36, 87%, 49%);
+  width: 50px;
+  height: 50px;
+  border-radius: 0.9375rem;
+  position: absolute;
+  left: 28px;
+  bottom: 162px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

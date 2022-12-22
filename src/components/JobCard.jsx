@@ -4,7 +4,9 @@ import "./JobCard.css";
 function JobCard() {
   return (
     <div class="main__job">
-      <img src={jobLogo} alt="" class="main__job--logo" />
+      <div className="main__job--logo">
+        <img src={jobLogo} alt="" class="main__job--logo-img" />
+      </div>
       <p class="main__job--posted-at">5h ago</p>
       <p class="main__job--contract">Full Time</p>
       <h1 class="main__job--position">Senior Software Engineer</h1>
