@@ -1,0 +1,54 @@
+.header__toggle {
+  max-width: 112px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* 
+ * Simple toggle switch design.
+ * Credit to Alvaro Montoro:
+ * https://alvaromontoro.com/blog/68017/creating-a-css-only-toggle-switch
+*/
+
+#header__toggle--switch {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  width: 3em;
+  height: 1.5em;
+  background: white;
+  border-radius: 1em;
+  box-sizing: content-box;
+  font-size: inherit;
+  vertical-align: text-bottom;
+  margin: auto 1em;
+}
+
+#header__toggle--switch::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  width: 0.875em;
+  height: 0.875em;
+  background-color: var(--clr-accent);
+  border-radius: 50%;
+  box-sizing: border-box;
+  margin: 0 0.3125em;
+}
+
+#header__toggle--switch:checked::before {
+  left: 1.375em;
+}
+
+#header__toggle--switch:hover {
+  cursor: pointer;
+}
+
+#header__toggle--switch:hover::before {
+  opacity: 0.75;
+}
