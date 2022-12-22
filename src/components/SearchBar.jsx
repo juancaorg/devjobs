@@ -12,10 +12,10 @@ function SearchBar() {
         className=""
         placeholder="Filter by title..."
       />
-      <button>
+      <button id="header__search--filter">
         <img src={filterIcon} alt="" aria-hidden="true" />
       </button>
-      <button type="submit">
+      <button type="submit" id="header__search--submit">
         <img src={searchIcon} alt="" aria-hidden="true" />
       </button>
     </div>
