@@ -1,5 +1,6 @@
 import Logo from "./Logo";
 import ToggleSwitch from "./ToggleSwitch";
+import SearchBar from "./SearchBar";
 import "./Header.css";
 
 function Header() {
@@ -9,6 +10,7 @@ function Header() {
         <Logo />
         <ToggleSwitch />
       </div>
+      <SearchBar />
     </header>
   );
 }
