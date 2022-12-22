@@ -1,6 +1,6 @@
 # Frontend Mentor - Devjobs web app
 
-![Design preview for the Devjobs web app coding challenge](./design/preview.jpg)
+![Design preview for the Devjobs web app coding challenge](./src/design/preview.jpg)
 
 ## Welcome! 👋
 
