@@ -56,3 +56,18 @@ body a {
 body a:hover {
   text-decoration-line: underline;
 }
+
+/* * * * * * * * * * * * * * * * * * * * * */
+
+/* 
+ * Manual dark mode.
+*/
+
+:root.dark {
+  --clr-background: hsl(220, 19%, 10%);
+  --clr-card-background: hsl(219, 29%, 14%);
+  --clr-title: hsl(0, 0, 100%);
+  --clr-paragraph: hsl(214, 17%, 51%);
+  --clr-accent: hsl(235, 69%, 61%);
+  --clr-attribution: hsl(212, 95%, 48%);
+}
