@@ -3,7 +3,7 @@ import "./Logo.css";
 function Logo() {
   return (
     <a href="/" className="header__logo">
-      Devjobs
+      devjobs
     </a>
   );
 }
