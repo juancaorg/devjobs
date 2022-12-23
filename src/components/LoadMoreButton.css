@@ -1,0 +1,20 @@
+.main__load-more {
+  background-color: var(--clr-accent);
+  border-radius: 0.3125rem;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  padding: 1rem 2rem;
+  display: flex;
+  margin: 2rem auto;
+}
+
+.main__load-more:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+.main__load-more:active {
+  transform: translateY(2px);
+}
