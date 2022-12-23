@@ -69,7 +69,7 @@ body a:hover {
   --clr-title: hsl(0, 0%, 100%);
   --clr-paragraph: hsl(214, 17%, 51%);
   --clr-accent: hsl(235, 69%, 61%);
-  --clr-attribution: hsl(212, 95%, 48%);
+  --clr-attribution: hsl(0, 0%, 100%);
   --flr-filter: brightness(0) invert(1);
 }
 
@@ -86,7 +86,7 @@ body a:hover {
     --clr-title: hsl(0, 0%, 100%);
     --clr-paragraph: hsl(214, 17%, 51%);
     --clr-accent: hsl(235, 69%, 61%);
-    --clr-attribution: hsl(212, 95%, 48%);
+    --clr-attribution: hsl(0, 0%, 100%);
     --flr-filter: brightness(0) invert(1);
   }
 }
