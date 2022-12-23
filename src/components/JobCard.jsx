@@ -15,7 +15,11 @@ function JobCard({
         className="main__job--logo"
         style={{ backgroundColor: logoBackground }}
       >
-        <img src={logo} alt="" className="main__job--logo-img" />
+        <img
+          src={logo}
+          alt={company + " logo"}
+          className="main__job--logo-img"
+        />
       </div>
       <div className="main__job--info-wrapper">
         <p className="main__job--posted-at">{postedAt}</p>
