@@ -5,6 +5,7 @@
 #header__search--input {
   width: 327px;
   height: 80px;
+  background-color: var(--clr-card-background);
   border-radius: 0.375rem;
   caret-color: var(--clr-accent);
   color: var(--clr-title);
@@ -31,6 +32,10 @@
   left: 66.97%;
   top: 37.5%;
   background-color: transparent;
+}
+
+#header__search--filter>img {
+  filter: var(--flr-filter);
 }
 
 #header__search--filter:hover {
