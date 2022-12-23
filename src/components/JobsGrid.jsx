@@ -1,27 +1,29 @@
+import dataArr from "../assets/data.json";
 import JobCard from "./JobCard";
 import "./JobsGrid.css";
 
 function JobsGrid() {
   return (
     <main className="main">
-      <JobCard
-        company={"Scoot"}
-        logo={"/src/assets/logos/scoot.svg"}
-        logoBackground={"hsl(36, 87%, 49%)"}
-        position={"Senior Software Engineer"}
-        postedAt={"5h ago"}
-        contract={"Full Time"}
-        location={"United Kingdom"}
-      />
-      <JobCard
-        company={"Blogr"}
-        logo={"/src/assets/logos/blogr.svg"}
-        logoBackground={"hsl(13, 79%, 52%)"}
-        position={"Haskell and PureScript Dev"}
-        postedAt={"20h ago"}
-        contract={"Part Time"}
-        location={"United States"}
-      />
+      {dataArr.map((obj) => {
+        const list = (
+          <JobCard
+            key={obj.id}
+            company={obj.company}
+            logo={
+              "/src/assets/logos/" +
+              obj.company.split(" ").join("").toLowerCase() +
+              ".svg"
+            }
+            logoBackground={obj.logoBackground}
+            position={obj.position}
+            postedAt={obj.postedAt}
+            contract={obj.contract}
+            location={obj.location}
+          />
+        );
+        return list;
+      })}
     </main>
   );
 }
