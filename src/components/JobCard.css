@@ -13,8 +13,16 @@
   border-radius: 0.9375rem;
   position: absolute;
   left: 28px;
-  bottom: 162px;
+  bottom: 140px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.main__job--info-wrapper {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.5rem;
 }
