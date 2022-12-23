@@ -33,6 +33,7 @@ video {
   --clr-paragraph: hsl(214, 17%, 51%);
   --clr-accent: hsl(235, 69%, 61%);
   --clr-attribution: hsl(212, 95%, 48%);
+  --flr-filter: unset;
   --ff-primary: "Kumbh Sans",
     sans-serif;
 }
@@ -69,4 +70,23 @@ body a:hover {
   --clr-paragraph: hsl(214, 17%, 51%);
   --clr-accent: hsl(235, 69%, 61%);
   --clr-attribution: hsl(212, 95%, 48%);
+  --flr-filter: brightness(0) invert(1);
+}
+
+/* * * * * * * * * * * * * * * * * * * * * */
+
+/* 
+ * Automatic dark mode.
+*/
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --clr-background: hsl(220, 19%, 10%);
+    --clr-card-background: hsl(219, 29%, 14%);
+    --clr-title: hsl(0, 0%, 100%);
+    --clr-paragraph: hsl(214, 17%, 51%);
+    --clr-accent: hsl(235, 69%, 61%);
+    --clr-attribution: hsl(212, 95%, 48%);
+    --flr-filter: brightness(0) invert(1);
+  }
 }
