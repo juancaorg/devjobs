@@ -3,7 +3,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <footer class="footer">
-      Challenge by
+      Challenge by{" "}
       <a
         href="https://www.frontendmentor.io/challenges/devjobs-web-app-HuvC_LP4l"
         rel="noopener"
@@ -11,7 +11,7 @@ function Footer() {
       >
         Frontend Mentor
       </a>
-      . Coded by
+      . Coded by{" "}
       <a href="https://www.juanca.org" rel="noopener" target="_blank">
         @juancaorg
       </a>
