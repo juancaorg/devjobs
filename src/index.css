@@ -57,6 +57,17 @@ body a:hover {
   text-decoration-line: underline;
 }
 
+/* 
+ * Input submit styling doesn't work
+ * in Safari iOS by default, this should fix it.
+*/
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 /* * * * * * * * * * * * * * * * * * * * * */
 
 /* 
