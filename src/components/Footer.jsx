@@ -2,7 +2,7 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <footer class="footer">
+    <footer className="footer">
       Challenge by{" "}
       <a
         href="https://www.frontendmentor.io/challenges/devjobs-web-app-HuvC_LP4l"
