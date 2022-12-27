@@ -1,12 +1,33 @@
+.header__search--filter-modal--wrapper {
+  position: relative;
+}
+
+.header__search--filter-modal--input-location-icon {
+  top: 24px;
+  left: 24px;
+  position: absolute;
+}
+
 .header__search--filter-modal {
-  width: 375px;
+  max-width: 327px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
+  border-radius: 0.375rem;
   background-color: var(--clr-card-background);
-  padding: 1rem;
   text-align: center;
-  z-index: 10;
   position: fixed;
-  top: 20vh;
-  left: calc(50% - 15rem);
+  top: 40vh;
+  z-index: 10;
+}
+
+#header__search--filter-modal--input-location-icon {
+  width: 327px;
+  border-radius: 0.375rem 0.375rem 0 0;
+  border-bottom: 1px solid var(--clr-paragraph);
+  background-color: var(--clr-card-background);
+  color: var(--clr-title);
+  padding: 1.5rem 1.5rem 1.5rem 3.5rem;
+}
+
+#header__search--filter-modal--input-location-icon:focus {
+  outline: 2px solid var(--clr-accent);
 }
