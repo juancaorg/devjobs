@@ -34,6 +34,7 @@ video {
   --clr-accent: hsl(235, 69%, 61%);
   --clr-attribution: hsl(212, 95%, 48%);
   --flr-filter: unset;
+  --flr-filter-active: brightness(0);
   --ff-primary: "Kumbh Sans",
     sans-serif;
 }
@@ -82,6 +83,7 @@ input {
   --clr-accent: hsl(235, 69%, 61%);
   --clr-attribution: hsl(0, 0%, 100%);
   --flr-filter: brightness(0) invert(1);
+  --flr-filter-active: brightness(0) invert(1);
 }
 
 /* * * * * * * * * * * * * * * * * * * * * */
@@ -99,5 +101,6 @@ input {
     --clr-accent: hsl(235, 69%, 61%);
     --clr-attribution: hsl(0, 0%, 100%);
     --flr-filter: brightness(0) invert(1);
+    --flr-filter-active: brightness(0) invert(1);
   }
 }

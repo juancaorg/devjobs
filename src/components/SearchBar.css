@@ -43,6 +43,10 @@
   opacity: 0.75;
 }
 
+#header__search--filter:active {
+  filter: var(--flr-filter-active);
+}
+
 #header__search--submit {
   position: absolute;
   left: 80.43%;
