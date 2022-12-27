@@ -19,7 +19,19 @@ function FilterModal() {
           placeholder="Filter by location..."
         />
       </div>
-      <h1>Hello modal! 👋</h1>
+      <div className="header__search--filter-modal--button-wrapper">
+        <div className="header__search--filter-modal--checkbox-wrapper">
+          <input
+            type="checkbox"
+            name="fulltime"
+            id="header__search--filter-modal--checkbox"
+          />
+          <label htmlFor="fulltime">Full Time Only</label>
+        </div>
+        <button type="submit" id="header__search--filter-modal--search">
+          Search
+        </button>
+      </div>
     </div>
   );
 }
