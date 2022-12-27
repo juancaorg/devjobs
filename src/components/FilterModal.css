@@ -33,7 +33,7 @@
 }
 
 .header__search--filter-modal--button-wrapper {
-  padding: 1.5rem;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -75,7 +75,7 @@
   font-size: 1rem;
   line-height: 1.25rem;
   padding: 1rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 #header__search--filter-modal--search:hover {
