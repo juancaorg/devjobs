@@ -55,6 +55,10 @@
 
 .header__search--filter-modal--checkbox-wrapper>input[type="checkbox"]:checked {
   background-color: var(--clr-accent);
+  background-image: url("../assets/desktop/icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
 }
 
 .header__search--filter-modal--checkbox-wrapper>input[type="checkbox"]:hover {
