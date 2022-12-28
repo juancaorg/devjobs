@@ -14,7 +14,7 @@ function FilterModal() {
         <input
           type="search"
           name="search"
-          id="header__search--filter-modal--input-location-icon"
+          id="header__search--filter-modal--input-location"
           className=""
           placeholder="Filter by location..."
         />
