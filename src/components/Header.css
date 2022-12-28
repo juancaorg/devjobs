@@ -11,6 +11,18 @@
 .header__wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   column-gap: 6.25rem;
   margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    width: 768px;
+    background-image: url("../assets/tablet/bg-pattern-header.svg");
+  }
+
+  .header__wrapper {
+    column-gap: 28.875rem;
+  }
 }
