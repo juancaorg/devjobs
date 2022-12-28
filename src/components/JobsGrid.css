@@ -17,3 +17,9 @@
     place-content: center;
   }
 }
+
+@media screen and (min-width: 1270px) {
+  .main {
+    grid-template-columns: repeat(3, 339px);
+  }
+}
