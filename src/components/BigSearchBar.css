@@ -94,7 +94,7 @@
 
 #header__bigsearch--submit:hover {
   cursor: pointer;
-  opacity: 0.75;
+  filter: brightness(1.25);
 }
 
 #header__bigsearch--submit:active {
