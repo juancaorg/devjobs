@@ -12,7 +12,7 @@
 
 .main__load-more:hover {
   cursor: pointer;
-  opacity: 0.75;
+  filter: brightness(1.25);
 }
 
 .main__load-more:active {
