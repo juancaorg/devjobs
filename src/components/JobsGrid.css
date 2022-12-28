@@ -20,6 +20,7 @@
 
 @media screen and (min-width: 1270px) {
   .main {
+    margin-top: 9.125rem;
     grid-template-columns: repeat(3, 339px);
   }
 }
