@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Logo from "./Logo";
 import ToggleSwitch from "./ToggleSwitch";
 import SearchBar from "./SearchBar";
+import BigSearchBar from "./BigSearchBar";
 import "./Header.css";
 
 function Header() {
@@ -27,7 +28,7 @@ function Header() {
         <Logo />
         <ToggleSwitch />
       </div>
-      {isTablet ? <div>I show on 768px or higher</div> : <SearchBar />}
+      {isTablet ? <BigSearchBar /> : <SearchBar />}
     </header>
   );
 }
