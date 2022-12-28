@@ -84,7 +84,7 @@
 
 #header__search--filter-modal--search:hover {
   cursor: pointer;
-  opacity: 0.75;
+  filter: brightness(1.25);
 }
 
 #header__search--filter-modal--search:active {
