@@ -76,6 +76,10 @@
   background-size: 20px;
 }
 
+.header__bigsearch--checkbox-wrapper>input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
 .header__bigsearch--checkbox-wrapper>label {
   color: var(--clr-title);
   font-weight: 700;
@@ -86,6 +90,11 @@
   background-color: var(--clr-accent);
   color: white;
   padding: 1rem;
+}
+
+#header__bigsearch--submit:hover {
+  cursor: pointer;
+  opacity: 0.75;
 }
 
 #header__bigsearch--submit:active {
