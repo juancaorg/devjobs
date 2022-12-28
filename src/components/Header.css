@@ -27,3 +27,14 @@
     column-gap: 28.875rem;
   }
 }
+
+@media screen and (min-width: 1270px) {
+  .header {
+    width: 1440px;
+    background-image: url("../assets/desktop/bg-pattern-header.svg");
+  }
+
+  .header__wrapper {
+    column-gap: 55.1875rem;
+  }
+}
