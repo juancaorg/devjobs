@@ -1,13 +1,26 @@
 .header__bigsearch {
   width: 689px;
   background-color: var(--clr-card-background);
-  border-radius: 6px;
+  border-radius: 0.375rem;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header__bigsearch--searchicon {
+  position: absolute;
+  left: 24px;
+}
+
+.header__bigsearch--locationicon {
+  position: absolute;
+  left: 240px;
 }
 
 .header__bigsearch--input {
   height: 80px;
-  padding: 28px;
+  padding: 1.75rem;
   background-color: var(--clr-card-background);
   border-right: 1px solid var(--clr-paragraph);
   caret-color: var(--clr-accent);
@@ -29,5 +42,52 @@
 }
 
 #header__bigsearch--input-title {
-  border-radius: 6px 0 0 6px;
+  width: 222px;
+  border-radius: 0.375rem 0 0 0.375rem;
+  padding-left: 4rem;
+}
+
+#header__bigsearch--input-location {
+  width: 213px;
+  padding-left: 3rem;
+}
+
+.header__bigsearch--checkbox-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 1rem;
+  margin-left: 1.25rem;
+  margin-right: 1.75rem;
+}
+
+.header__bigsearch--checkbox-wrapper>input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  border-radius: 0.1875rem;
+  background-color: var(--clr-checkbox);
+}
+
+.header__bigsearch--checkbox-wrapper>input[type="checkbox"]:checked {
+  background-color: var(--clr-accent);
+  background-image: url("../assets/desktop/icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
+}
+
+.header__bigsearch--checkbox-wrapper>label {
+  color: var(--clr-title);
+  font-weight: 700;
+}
+
+#header__bigsearch--submit {
+  border-radius: 5px;
+  background-color: var(--clr-accent);
+  color: white;
+  padding: 1rem;
+}
+
+#header__bigsearch--submit:active {
+  transform: translateY(2px);
 }
