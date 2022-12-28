@@ -5,3 +5,14 @@
   row-gap: 3rem;
   margin-top: 6.0625rem;
 }
+
+@media screen and (min-width: 768px) {
+  .main {
+    display: grid;
+    column-gap: 11px;
+    row-gap: 65px;
+    grid-template-columns: repeat(2, 339px);
+    place-items: center;
+    place-content: center;
+  }
+}
