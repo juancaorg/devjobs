@@ -100,3 +100,39 @@
 #header__bigsearch--submit:active {
   transform: translateY(2px);
 }
+
+@media screen and (min-width: 1270px) {
+  .header__bigsearch {
+    width: 1110px;
+  }
+
+  .header__bigsearch--searchicon {
+    left: 32px;
+  }
+
+  .header__bigsearch--locationicon {
+    left: 488px;
+  }
+
+  #header__bigsearch--input-title {
+    width: 462px;
+    padding-left: 5rem;
+  }
+
+  #header__bigsearch--input-location {
+    width: 300px;
+    padding-left: 4rem;
+  }
+
+  .header__bigsearch--checkbox-wrapper {
+    margin-left: 2rem;
+    margin-right: 3.5rem;
+  }
+
+  #header__bigsearch--submit {
+    border-radius: 5px;
+    background-color: var(--clr-accent);
+    color: white;
+    padding: 1rem 2.5rem;
+  }
+}
