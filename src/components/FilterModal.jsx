@@ -26,7 +26,7 @@ function FilterModal() {
             name="fulltime"
             id="header__search--filter-modal--checkbox"
           />
-          <label htmlFor="fulltime">Full Time Only</label>
+          <label htmlFor="fulltime">Full Time</label>
         </div>
         <button type="submit" id="header__search--filter-modal--search">
           Search
