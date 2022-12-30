@@ -17,7 +17,22 @@ function App() {
                 .split(" ")
                 .join("")
                 .toLowerCase()}
-              element={<Detail position={obj.position} />}
+              element={
+                <Detail
+                  company={obj.company}
+                  logo={obj.logo}
+                  logoBackground={obj.logoBackground}
+                  position={obj.position}
+                  postedAt={obj.postedAt}
+                  contract={obj.contract}
+                  location={obj.location}
+                  website={obj.website}
+                  apply={obj.apply}
+                  description={obj.description}
+                  requirements={obj.requirements}
+                  role={obj.role}
+                />
+              }
             />
           );
           return routesList;
