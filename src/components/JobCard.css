@@ -45,6 +45,10 @@
   cursor: pointer;
 }
 
+.main__job--link:hover {
+  text-decoration-line: none;
+}
+
 .main__job--company {
   font-size: 1rem;
   line-height: 1.25rem;
