@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
+
 import "./Logo.css";
 
 function Logo() {
   return (
-    <a href="/" className="header__logo">
+    <Link to="/" className="header__logo">
       devjobs
-    </a>
+    </Link>
   );
 }
 
