@@ -57,6 +57,10 @@ function JobsGrid() {
             postedAt={obj.postedAt}
             contract={obj.contract}
             location={obj.location}
+            linkTo={`${obj.company}-${obj.id}/`
+              .split(" ")
+              .join("")
+              .toLowerCase()}
           />
         );
         return list;
