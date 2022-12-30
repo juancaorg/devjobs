@@ -47,7 +47,7 @@ function JobsGrid() {
   return (
     <main className="main">
       {dataArr.map((obj) => {
-        const list = (
+        const jobCardsList = (
           <JobCard
             key={obj.id}
             company={obj.company}
@@ -63,7 +63,7 @@ function JobsGrid() {
               .toLowerCase()}
           />
         );
-        return list;
+        return jobCardsList;
       })}
     </main>
   );
