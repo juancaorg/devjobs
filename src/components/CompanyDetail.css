@@ -86,7 +86,7 @@
   .company__detail--all-wrapper {
     padding: 2rem;
     flex-direction: row;
-    column-gap: 15.25rem;
+    column-gap: 14rem;
   }
 
   .company__detail--info-wrapper {
@@ -95,5 +95,15 @@
 
   .company__detail--link {
     margin-top: unset;
+  }
+}
+
+@media screen and (min-width: 1270px) {
+  .company__detail {
+    width: 730px;
+  }
+
+  .company__detail--all-wrapper {
+    column-gap: 17rem;
   }
 }
