@@ -13,20 +13,22 @@ function CompanyDetail({ company, logo, logoBackground, website }) {
           className="company__detail--logo-img"
         />
       </div>
-      <div className="company__detail--info-wrapper">
-        <h1 className="company__detail--name">{company}</h1>
-        <p className="company__detail--website">
-          {company.split(" ").join("").toLowerCase() + ".com"}
-        </p>
+      <div className="company__detail--all-wrapper">
+        <div className="company__detail--info-wrapper">
+          <h1 className="company__detail--name">{company}</h1>
+          <p className="company__detail--website">
+            {company.split(" ").join("").toLowerCase() + ".com"}
+          </p>
+        </div>
+        <a
+          href={website}
+          rel="noopener"
+          target="_blank"
+          className="company__detail--link"
+        >
+          Company Site
+        </a>
       </div>
-      <a
-        href={website}
-        rel="noopener"
-        target="_blank"
-        className="company__detail--link"
-      >
-        Company Site
-      </a>
     </div>
   );
 }
