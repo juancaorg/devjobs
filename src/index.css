@@ -34,6 +34,9 @@ video {
   --clr-accent: hsl(235, 69%, 61%);
   --clr-attribution: hsl(212, 95%, 48%);
   --clr-checkbox: hsl(199, 6%, 91%);
+  --clr-button: hsl(236, 74%, 96%);
+  --clr-accent-button: hsl(235, 69%, 61%);
+  --clr-hover-button: hsl(234, 68%, 86%);
   --flr-filter: unset;
   --flr-filter-active: brightness(0);
   --ff-primary: "Kumbh Sans",
@@ -84,6 +87,9 @@ input {
   --clr-accent: hsl(235, 69%, 61%);
   --clr-attribution: hsl(0, 0%, 100%);
   --clr-checkbox: hsl(221, 16%, 23%);
+  --clr-button: hsl(221, 16%, 22%);
+  --clr-accent-button: hsl(0, 0%, 100%);
+  --clr-hover-button: hsl(214, 8%, 35%);
   --flr-filter: brightness(0) invert(1);
   --flr-filter-active: brightness(0) invert(1);
 }
@@ -103,6 +109,9 @@ input {
     --clr-accent: hsl(235, 69%, 61%);
     --clr-attribution: hsl(0, 0%, 100%);
     --clr-checkbox: hsl(221, 16%, 23%);
+    --clr-button: hsl(221, 16%, 22%);
+    --clr-accent-button: hsl(0, 0%, 100%);
+    --clr-hover-button: hsl(214, 8%, 35%);
     --flr-filter: brightness(0) invert(1);
     --flr-filter-active: brightness(0) invert(1);
   }
