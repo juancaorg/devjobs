@@ -43,6 +43,18 @@ video {
     sans-serif;
 }
 
+/* 
+ * Disable horizontal scrolling.
+ * Credit:
+ * https: //stackoverflow.com/questions/17756649/disable-the-horizontal-scroll#17756714
+*/
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   min-height: 100vh;
   background-color: var(--clr-background);
