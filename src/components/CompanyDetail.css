@@ -86,7 +86,7 @@
   .company__detail--all-wrapper {
     padding: 2rem;
     flex-direction: row;
-    column-gap: 16rem;
+    column-gap: 15.25rem;
   }
 
   .company__detail--info-wrapper {
