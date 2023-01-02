@@ -1,5 +1,5 @@
 .apply__button {
-  width: 327px;
+  max-width: 327px;
   border-radius: 0.3125rem;
   background-color: var(--clr-accent);
   color: white;
@@ -20,6 +20,6 @@
 
 @media screen and (min-width: 768px) {
   .apply__button {
-    width: 141px;
+    max-width: 141px;
   }
 }
