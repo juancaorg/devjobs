@@ -4,8 +4,11 @@ import "./ApplyDetail.css";
 function ApplyDetail({ company, position, apply }) {
   return (
     <>
-      <h1>ApplyDetail component</h1>
-      <ApplyButton />
+      <div className="apply__detail--wrapper">
+        <h1 className="apply__detail--position">{position}</h1>
+        <p className="apply__detail--company">{company}</p>
+      </div>
+      {/* <ApplyButton apply={apply} /> */}
     </>
   );
 }

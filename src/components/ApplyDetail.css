@@ -1,0 +1,11 @@
+.apply__detail--wrapper {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .apply__detail--wrapper {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+  }
+}
