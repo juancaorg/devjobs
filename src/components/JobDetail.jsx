@@ -15,13 +15,15 @@ function JobDetail({
     <div className="job__detail">
       <div className="job__detail--apply-wrapper">
         <div className="job__detail--info-wrapper">
-          <p className="job__detail--posted-at">{postedAt}</p>
-          <p> • </p>
-          <p className="job__detail--contract">{contract}</p>
+          <div className="job__detail--posted-wrapper">
+            <p className="job__detail--posted-at">{postedAt}</p>
+            <p> • </p>
+            <p className="job__detail--contract">{contract}</p>
+          </div>
           <h1 className="job__detail--position">{position}</h1>
           <p className="job__detail--location">{location}</p>
         </div>
-        <ApplyButton apply={apply} />
+        <ApplyButton apply={apply} className="job__detail--apply" />
       </div>
       <p className="job__detail--description">{description}</p>
       <h2>Requirements</h2>
