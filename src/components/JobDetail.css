@@ -56,3 +56,19 @@
   margin-top: 2rem;
   margin-bottom: 2.5rem;
 }
+
+.job__detail--requirements-items {
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.job__detail--requirements-items>li {
+  list-style: none;
+}
+
+.job__detail--requirements-items>li::before {
+  content: "\2022";
+  color: var(--clr-accent);
+  display: inline-block;
+  padding-right: 1em;
+}
