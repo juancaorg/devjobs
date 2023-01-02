@@ -3,3 +3,7 @@
   flex-direction: column;
   align-items: center;
 }
+
+.job__detail {
+  margin-top: 14rem;
+}

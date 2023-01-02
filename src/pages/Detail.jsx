@@ -24,6 +24,7 @@ function Detail({
         logo={logo}
         logoBackground={logoBackground}
         website={website}
+        className={"header__detail--component"}
       />
       <JobDetail
         position={position}
@@ -34,8 +35,14 @@ function Detail({
         description={description}
         requirements={requirements}
         role={role}
+        className={"job__detail--component"}
       />
-      <ApplyDetail company={company} position={position} apply={apply} />
+      <ApplyDetail
+        company={company}
+        position={position}
+        apply={apply}
+        className={"apply__detail--component"}
+      />
     </div>
   );
 }
