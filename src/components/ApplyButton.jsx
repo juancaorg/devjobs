@@ -1,7 +1,11 @@
 import "./ApplyButton.css";
 
-function ApplyButton() {
-  return <button>Apply Now</button>;
+function ApplyButton({ apply }) {
+  return (
+    <a href={apply} rel="noopener" target="_blank" className="apply__button">
+      Apply Now
+    </a>
+  );
 }
 
 export default ApplyButton;
