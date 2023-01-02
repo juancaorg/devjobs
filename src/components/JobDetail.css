@@ -72,3 +72,20 @@
   display: inline-block;
   padding-right: 1em;
 }
+
+.job__detail--role-items {
+  margin-top: 2rem;
+}
+
+.job__detail--role-items>li {
+  list-style-position: inside;
+}
+
+.job__detail--role-items>li::marker {
+  color: var(--clr-accent);
+}
+
+.job__detail--role-items>li::before {
+  content: "";
+  padding-right: 1em;
+}
