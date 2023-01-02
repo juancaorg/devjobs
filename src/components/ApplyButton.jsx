@@ -1,8 +1,13 @@
 import "./ApplyButton.css";
 
-function ApplyButton({ apply }) {
+function ApplyButton({ apply, className }) {
   return (
-    <a href={apply} rel="noopener" target="_blank" className="apply__button">
+    <a
+      href={apply}
+      rel="noopener"
+      target="_blank"
+      className={`apply__button ${className}`}
+    >
       Apply Now
     </a>
   );
