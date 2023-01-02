@@ -44,3 +44,8 @@
 .job__detail--apply {
   width: 279px;
 }
+
+.job__detail--description {
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
