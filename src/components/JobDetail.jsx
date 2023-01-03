@@ -10,9 +10,10 @@ function JobDetail({
   description,
   requirements,
   role,
+  className,
 }) {
   return (
-    <div className="job__detail">
+    <div className={`job__detail ${className}`}>
       <div className="job__detail--apply-wrapper">
         <div className="job__detail--info-wrapper">
           <div className="job__detail--posted-wrapper">

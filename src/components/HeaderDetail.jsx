@@ -3,9 +3,9 @@ import ToggleSwitch from "./ToggleSwitch";
 import CompanyDetail from "./CompanyDetail";
 import "./HeaderDetail.css";
 
-function HeaderDetail({ company, logo, logoBackground, website }) {
+function HeaderDetail({ company, logo, logoBackground, website, className }) {
   return (
-    <header className="header__detail">
+    <header className={`header__detail ${className}`}>
       <div className="header__detail--wrapper">
         <Logo />
         <ToggleSwitch />
