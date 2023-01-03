@@ -107,7 +107,7 @@
   .job__detail--apply-wrapper {
     flex-direction: row;
     align-items: center;
-    column-gap: 110px;
+    column-gap: 180px;
   }
 
   .job__detail--location {
@@ -133,6 +133,6 @@
   }
 
   .job__detail--apply-wrapper {
-    column-gap: 150px;
+    column-gap: 230px;
   }
 }
