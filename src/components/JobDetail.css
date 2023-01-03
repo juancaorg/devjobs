@@ -126,3 +126,13 @@
     margin-bottom: 1.75rem;
   }
 }
+
+@media screen and (min-width: 1270px) {
+  .job__detail {
+    width: 730px;
+  }
+
+  .job__detail--apply-wrapper {
+    column-gap: 150px;
+  }
+}
