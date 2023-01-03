@@ -1,3 +1,14 @@
+.apply__detail {
+  width: 327px;
+  background-color: var(--clr-card-background);
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .apply__detail--wrapper {
   display: none;
 }
