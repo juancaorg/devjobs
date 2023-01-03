@@ -47,7 +47,7 @@ function JobsGrid() {
   return (
     <main className="main">
       {dataArr.map((obj) => {
-        const list = (
+        const jobCardsList = (
           <JobCard
             key={obj.id}
             company={obj.company}
@@ -57,9 +57,13 @@ function JobsGrid() {
             postedAt={obj.postedAt}
             contract={obj.contract}
             location={obj.location}
+            linkTo={`${obj.company}-${obj.id}/`
+              .split(" ")
+              .join("")
+              .toLowerCase()}
           />
         );
-        return list;
+        return jobCardsList;
       })}
     </main>
   );

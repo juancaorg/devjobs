@@ -1,0 +1,25 @@
+.apply__button {
+  max-width: 327px;
+  border-radius: 0.3125rem;
+  background-color: var(--clr-accent);
+  color: white;
+  padding: 1rem;
+  transition: ease 100ms;
+  text-align: center;
+}
+
+.apply__button:hover {
+  cursor: pointer;
+  text-decoration-line: none;
+  filter: brightness(120%);
+}
+
+.apply__button:active {
+  transform: translateY(2px);
+}
+
+@media screen and (min-width: 768px) {
+  .apply__button {
+    max-width: 141px;
+  }
+}

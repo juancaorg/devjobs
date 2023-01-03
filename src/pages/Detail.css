@@ -1,0 +1,17 @@
+.page__detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.job__detail--component {
+  margin-top: 14rem;
+  margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .job__detail--component {
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+  }
+}

@@ -1,0 +1,138 @@
+.job__detail {
+  width: 327px;
+  background-color: var(--clr-card-background);
+  border-radius: 0.375rem;
+  padding: 2.5rem 1.5rem;
+  line-height: 1.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.job__detail>h2 {
+  color: var(--clr-title);
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 1.75rem
+}
+
+.job__detail--apply-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.job__detail--info-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.job__detail--posted-wrapper {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+}
+
+.job__detail--position {
+  color: var(--clr-title);
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.job__detail--location {
+  color: var(--clr-accent);
+  margin-bottom: 3.125rem;
+}
+
+.job__detail--apply {
+  width: 279px;
+}
+
+.job__detail--description {
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.job__detail--requirements-items {
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.job__detail--requirements-items>li {
+  list-style: none;
+}
+
+.job__detail--requirements-items>li:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+
+.job__detail--requirements-items>li::before {
+  content: "\2022";
+  color: var(--clr-accent);
+  display: inline-block;
+  padding-right: 1em;
+}
+
+.job__detail--role-items {
+  margin-top: 2rem;
+}
+
+.job__detail--role-items>li {
+  list-style-position: inside;
+}
+
+.job__detail--role-items>li:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+
+.job__detail--role-items>li::marker {
+  color: var(--clr-accent);
+}
+
+.job__detail--role-items>li::before {
+  content: "";
+  padding-right: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  .job__detail {
+    width: 689px;
+    padding: 48px;
+  }
+
+  .job__detail--apply-wrapper {
+    flex-direction: row;
+    align-items: center;
+    column-gap: 180px;
+  }
+
+  .job__detail--location {
+    margin-bottom: unset;
+  }
+
+  .job__detail--position {
+    color: var(--clr-title);
+    font-size: 1.75rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .job__detail--description {
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 1270px) {
+  .job__detail {
+    width: 730px;
+  }
+
+  .job__detail--apply-wrapper {
+    column-gap: 230px;
+  }
+}
