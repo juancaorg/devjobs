@@ -3,7 +3,7 @@
 /* 
  * Credit to Kevin Powell for his YouTube short.
  * Simple CSS reset to prevent headaches.
-*/
+ */
 
 *,
 *::before,
@@ -26,6 +26,10 @@ video {
   max-width: 100%;
 }
 
+/* 
+ * Default colors.
+ */
+
 :root {
   --clr-background: hsl(210, 22%, 96%);
   --clr-card-background: hsl(0, 0%, 100%);
@@ -41,6 +45,25 @@ video {
   --flr-filter-active: brightness(0);
   --ff-primary: "Kumbh Sans",
     sans-serif;
+}
+
+/* 
+ * Dark theme colors.
+ */
+
+:root.dark-theme {
+  --clr-background: hsl(220, 19%, 10%);
+  --clr-card-background: hsl(219, 29%, 14%);
+  --clr-title: hsl(0, 0%, 100%);
+  --clr-paragraph: hsl(214, 17%, 51%);
+  --clr-accent: hsl(235, 69%, 61%);
+  --clr-attribution: hsl(0, 0%, 100%);
+  --clr-checkbox: hsl(221, 16%, 23%);
+  --clr-button: hsl(221, 16%, 22%);
+  --clr-accent-button: hsl(0, 0%, 100%);
+  --clr-hover-button: hsl(214, 8%, 35%);
+  --flr-filter: brightness(0) invert(1);
+  --flr-filter-active: brightness(0) invert(1);
 }
 
 /* 
@@ -77,7 +100,7 @@ body a:hover {
 /* 
  * Input submit styling doesn't work
  * in Safari iOS by default, this should fix it.
-*/
+ */
 
 input {
   -webkit-appearance: none;
@@ -86,33 +109,19 @@ input {
 }
 
 /* * * * * * * * * * * * * * * * * * * * * */
-
-/* 
- * Manual dark mode.
-*/
-
-:root.dark {
-  --clr-background: hsl(220, 19%, 10%);
-  --clr-card-background: hsl(219, 29%, 14%);
-  --clr-title: hsl(0, 0%, 100%);
-  --clr-paragraph: hsl(214, 17%, 51%);
-  --clr-accent: hsl(235, 69%, 61%);
-  --clr-attribution: hsl(0, 0%, 100%);
-  --clr-checkbox: hsl(221, 16%, 23%);
-  --clr-button: hsl(221, 16%, 22%);
-  --clr-accent-button: hsl(0, 0%, 100%);
-  --clr-hover-button: hsl(214, 8%, 35%);
-  --flr-filter: brightness(0) invert(1);
-  --flr-filter-active: brightness(0) invert(1);
-}
-
 /* * * * * * * * * * * * * * * * * * * * * */
 
 /* 
  * Automatic dark mode.
-*/
+ */
 
+/* 
+ * Styles for users who prefer 
+ * dark mode at the OS level 
+ */
 @media (prefers-color-scheme: dark) {
+
+  /* defaults to dark theme */
   :root {
     --clr-background: hsl(220, 19%, 10%);
     --clr-card-background: hsl(219, 29%, 14%);
@@ -126,5 +135,22 @@ input {
     --clr-hover-button: hsl(214, 8%, 35%);
     --flr-filter: brightness(0) invert(1);
     --flr-filter-active: brightness(0) invert(1);
+  }
+
+  /* 
+   * Override dark mode with light mode styles 
+   * if the user decides to swap.
+   */
+  :root.light-theme {
+    --clr-background: hsl(210, 22%, 96%);
+    --clr-card-background: hsl(0, 0%, 100%);
+    --clr-title: hsl(219, 29%, 14%);
+    --clr-paragraph: hsl(214, 17%, 51%);
+    --clr-accent: hsl(235, 69%, 61%);
+    --clr-attribution: hsl(212, 95%, 48%);
+    --clr-checkbox: hsl(199, 6%, 91%);
+    --clr-button: hsl(236, 74%, 96%);
+    --clr-accent-button: hsl(235, 69%, 61%);
+    --clr-hover-button: hsl(234, 68%, 86%);
   }
 }
