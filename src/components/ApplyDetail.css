@@ -1,5 +1,5 @@
 .apply__detail {
-  width: 327px;
+  width: 374px;
   background-color: var(--clr-card-background);
   border-top-left-radius: 0.375rem;
   border-top-right-radius: 0.375rem;
@@ -14,9 +14,34 @@
 }
 
 @media screen and (min-width: 768px) {
+  .apply__detail {
+    width: 768px;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 300px;
+  }
+
   .apply__detail--wrapper {
     text-align: start;
     display: flex;
     flex-direction: column;
+    row-gap: 8px;
+  }
+
+  .apply__detail--position {
+    color: var(--clr-title);
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+
+  .apply__detail--button {
+    width: 141px;
+  }
+}
+
+@media screen and (min-width: 1270px) {
+  .apply__detail {
+    width: 100%;
+    column-gap: 360px;
   }
 }
