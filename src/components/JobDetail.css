@@ -66,6 +66,10 @@
   list-style: none;
 }
 
+.job__detail--requirements-items>li:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+
 .job__detail--requirements-items>li::before {
   content: "\2022";
   color: var(--clr-accent);
@@ -81,6 +85,10 @@
   list-style-position: inside;
 }
 
+.job__detail--role-items>li:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+
 .job__detail--role-items>li::marker {
   color: var(--clr-accent);
 }
@@ -88,4 +96,33 @@
 .job__detail--role-items>li::before {
   content: "";
   padding-right: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  .job__detail {
+    width: 689px;
+    padding: 48px;
+  }
+
+  .job__detail--apply-wrapper {
+    flex-direction: row;
+    align-items: center;
+    column-gap: 110px;
+  }
+
+  .job__detail--location {
+    margin-bottom: unset;
+  }
+
+  .job__detail--position {
+    color: var(--clr-title);
+    font-size: 1.75rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .job__detail--description {
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
+  }
 }
