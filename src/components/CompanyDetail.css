@@ -103,7 +103,6 @@
   }
 
   .company__detail--all-wrapper {
-    column-gap: 17rem;
     column-gap: 275px;
   }
 }
