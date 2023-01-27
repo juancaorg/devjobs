@@ -9,7 +9,6 @@ import FilterModal from "./FilterModal";
 
 function SearchBar({ onSearchTitleQuery }) {
   const [showFilterModal, setShowFilterModal] = useState();
-  const [searchTitleQuery, setSearchTitleQuery] = useState("");
 
   function showFilterModalHandler() {
     setShowFilterModal(true);
@@ -18,14 +17,6 @@ function SearchBar({ onSearchTitleQuery }) {
   function closeFilterModalHandler() {
     setShowFilterModal(false);
   }
-
-  function searchItemsByTitle(searchInput) {
-    setSearchTitleQuery(searchInput.trim());
-  }
-
-  // TODO: lift searchTitleInput up.
-  onSearchTitleQuery(searchTitleQuery);
-  console.log(`Search Bar component: ${searchTitleQuery}`);
 
   return (
     <div className="header__search">
@@ -37,7 +28,7 @@ function SearchBar({ onSearchTitleQuery }) {
         placeholder="Filter by title..."
         onKeyDown={(event) => {
           if (event.key === "Enter") {
-            searchItemsByTitle(event.target.value);
+            onSearchTitleQuery(event.target.value.trim());
           }
         }}
       />
@@ -48,8 +39,8 @@ function SearchBar({ onSearchTitleQuery }) {
         type="submit"
         id="header__search--submit"
         onClick={() => {
-          searchItemsByTitle(
-            document.getElementById("header__search--input").value
+          onSearchTitleQuery(
+            document.getElementById("header__search--input").value.trim()
           );
         }}
       >

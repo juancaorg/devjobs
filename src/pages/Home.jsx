@@ -7,13 +7,16 @@ import Footer from "../components/Footer";
 import "./Home.css";
 
 function Home() {
-  const [query, setQuery] = useState("");
-  console.log(`Home component: ${query}`);
+  const [titleInputQuery, setTitleInputQuery] = useState("");
+
+  function setTitleInputQueryHandler(enteredSearchTitleQuery) {
+    setTitleInputQuery(enteredSearchTitleQuery);
+  }
 
   return (
     <>
-      <Header onQuery={setQuery} />
-      <JobsGrid titleQuery={query} />
+      <Header onTitleQuery={setTitleInputQueryHandler} />
+      <JobsGrid titleQuery={titleInputQuery} />
       <LoadMoreButton />
       <Footer />
     </>

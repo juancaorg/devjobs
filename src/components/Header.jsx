@@ -6,7 +6,7 @@ import SearchBar from "./SearchBar";
 import BigSearchBar from "./BigSearchBar";
 import "./Header.css";
 
-function Header({ onQuery }) {
+function Header({ onTitleQuery }) {
   // React conditionally render based on viewport size.
   // Credit to @foakesm on Stack Overflow:
   // https://stackoverflow.com/questions/46586165/react-conditionally-render-based-on-viewport-size/60811141#60811141
@@ -22,9 +22,8 @@ function Header({ onQuery }) {
     return () => window.removeEventListener("resize", updateMedia);
   });
 
-  function searchTitleQueryHandler(enteredSearchTitleInput) {
-    console.log(`Header component: ${enteredSearchTitleInput}`);
-    onQuery(enteredSearchTitleInput);
+  function searchTitleQueryHandler(enteredSearchTitleQuery) {
+    onTitleQuery(enteredSearchTitleQuery);
   }
 
   return (
