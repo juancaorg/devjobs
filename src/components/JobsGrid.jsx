@@ -44,12 +44,14 @@ function JobsGrid({ titleQuery }) {
     vector: vectorLogo,
   };
 
+  // Create a filtered dataArr depending on titleQuery.
   const filteredTitleDataArr = dataArr.filter((item) =>
     item.position.toLowerCase().includes(titleQuery.toLowerCase())
   );
 
   return (
     <main className="main">
+      {/* If titleQuery isn't empty, render JobCards corresponding to filteredTitleDataArr. */}
       {titleQuery.length > 1
         ? filteredTitleDataArr.map((obj) => (
             <JobCard
@@ -67,7 +69,8 @@ function JobsGrid({ titleQuery }) {
                 .toLowerCase()}
             />
           ))
-        : dataArr.map((obj) => (
+        : // Else, render all JobCards.
+          dataArr.map((obj) => (
             <JobCard
               key={obj.id}
               company={obj.company}
