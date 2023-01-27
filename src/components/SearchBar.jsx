@@ -7,9 +7,9 @@ import "./SearchBar.css";
 import Backdrop from "./Backdrop";
 import FilterModal from "./FilterModal";
 
-function SearchBar() {
+function SearchBar({ onSearchTitleQuery }) {
   const [showFilterModal, setShowFilterModal] = useState();
-  const [searchTitleInput, setSearchTitleInput] = useState("");
+  const [searchTitleQuery, setSearchTitleQuery] = useState("");
 
   function showFilterModalHandler() {
     setShowFilterModal(true);
@@ -19,12 +19,13 @@ function SearchBar() {
     setShowFilterModal(false);
   }
 
-  function searchItemsByTitle(searchTitleQuery) {
-    setSearchTitleInput(searchTitleQuery.trim());
+  function searchItemsByTitle(searchInput) {
+    setSearchTitleQuery(searchInput.trim());
   }
 
   // TODO: lift searchTitleInput up.
-  console.log(searchTitleInput);
+  onSearchTitleQuery(searchTitleQuery);
+  console.log(`Search Bar component: ${searchTitleQuery}`);
 
   return (
     <div className="header__search">

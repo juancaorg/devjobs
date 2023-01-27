@@ -21,7 +21,7 @@ import scootLogo from "../assets/logos/scoot.svg";
 import typemasterLogo from "../assets/logos/typemaster.svg";
 import vectorLogo from "../assets/logos/vector.svg";
 
-function JobsGrid() {
+function JobsGrid({ titleQuery }) {
   // Create logosObj for the logos routes.
   // This is made so you don't have touse eval().
   // For more info about not using eval, check MDN:
@@ -43,6 +43,8 @@ function JobsGrid() {
     typemaster: typemasterLogo,
     vector: vectorLogo,
   };
+
+  console.log(`JobsGrid component: ${titleQuery}`);
 
   return (
     <main className="main">
