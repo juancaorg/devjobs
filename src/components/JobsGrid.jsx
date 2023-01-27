@@ -48,25 +48,19 @@ function JobsGrid({ titleQuery }) {
 
   return (
     <main className="main">
-      {dataArr.map((obj) => {
-        const jobCardsList = (
-          <JobCard
-            key={obj.id}
-            company={obj.company}
-            logo={logosObj[obj.company.split(" ").join("").toLowerCase()]}
-            logoBackground={obj.logoBackground}
-            position={obj.position}
-            postedAt={obj.postedAt}
-            contract={obj.contract}
-            location={obj.location}
-            linkTo={`${obj.company}-${obj.id}/`
-              .split(" ")
-              .join("")
-              .toLowerCase()}
-          />
-        );
-        return jobCardsList;
-      })}
+      {dataArr.map((obj) => (
+        <JobCard
+          key={obj.id}
+          company={obj.company}
+          logo={logosObj[obj.company.split(" ").join("").toLowerCase()]}
+          logoBackground={obj.logoBackground}
+          position={obj.position}
+          postedAt={obj.postedAt}
+          contract={obj.contract}
+          location={obj.location}
+          linkTo={`${obj.company}-${obj.id}/`.split(" ").join("").toLowerCase()}
+        />
+      ))}
     </main>
   );
 }
