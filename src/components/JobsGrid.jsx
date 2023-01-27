@@ -44,23 +44,45 @@ function JobsGrid({ titleQuery }) {
     vector: vectorLogo,
   };
 
-  console.log(`JobsGrid component: ${titleQuery}`);
+  const filteredTitleDataArr = dataArr.filter((item) =>
+    item.position.toLowerCase().includes(titleQuery.toLowerCase())
+  );
 
   return (
     <main className="main">
-      {dataArr.map((obj) => (
-        <JobCard
-          key={obj.id}
-          company={obj.company}
-          logo={logosObj[obj.company.split(" ").join("").toLowerCase()]}
-          logoBackground={obj.logoBackground}
-          position={obj.position}
-          postedAt={obj.postedAt}
-          contract={obj.contract}
-          location={obj.location}
-          linkTo={`${obj.company}-${obj.id}/`.split(" ").join("").toLowerCase()}
-        />
-      ))}
+      {titleQuery.length > 1
+        ? filteredTitleDataArr.map((obj) => (
+            <JobCard
+              key={obj.id}
+              company={obj.company}
+              logo={logosObj[obj.company.split(" ").join("").toLowerCase()]}
+              logoBackground={obj.logoBackground}
+              position={obj.position}
+              postedAt={obj.postedAt}
+              contract={obj.contract}
+              location={obj.location}
+              linkTo={`${obj.company}-${obj.id}/`
+                .split(" ")
+                .join("")
+                .toLowerCase()}
+            />
+          ))
+        : dataArr.map((obj) => (
+            <JobCard
+              key={obj.id}
+              company={obj.company}
+              logo={logosObj[obj.company.split(" ").join("").toLowerCase()]}
+              logoBackground={obj.logoBackground}
+              position={obj.position}
+              postedAt={obj.postedAt}
+              contract={obj.contract}
+              location={obj.location}
+              linkTo={`${obj.company}-${obj.id}/`
+                .split(" ")
+                .join("")
+                .toLowerCase()}
+            />
+          ))}
     </main>
   );
 }
