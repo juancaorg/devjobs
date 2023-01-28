@@ -7,7 +7,7 @@ import "./SearchBar.css";
 import Backdrop from "./Backdrop";
 import FilterModal from "./FilterModal";
 
-function SearchBar({ onSearchTitleQuery }) {
+function SearchBar({ onSearchTitleQuery, onSearchLocationQuery }) {
   const [showFilterModal, setShowFilterModal] = useState();
 
   function showFilterModalHandler() {
@@ -16,6 +16,10 @@ function SearchBar({ onSearchTitleQuery }) {
 
   function closeFilterModalHandler() {
     setShowFilterModal(false);
+  }
+
+  function searchLocationQueryHandler(enteredSearchLocationQuery) {
+    onSearchLocationQuery(enteredSearchLocationQuery);
   }
 
   return (
@@ -47,7 +51,9 @@ function SearchBar({ onSearchTitleQuery }) {
         <img src={searchIcon} alt="" aria-hidden="true" />
       </button>
       {showFilterModal && <Backdrop onClick={closeFilterModalHandler} />}
-      {showFilterModal && <FilterModal />}
+      {showFilterModal && (
+        <FilterModal onSearchLocationQuery={searchLocationQueryHandler} />
+      )}
     </div>
   );
 }

@@ -21,7 +21,7 @@ import scootLogo from "../assets/logos/scoot.svg";
 import typemasterLogo from "../assets/logos/typemaster.svg";
 import vectorLogo from "../assets/logos/vector.svg";
 
-function JobsGrid({ titleQuery }) {
+function JobsGrid({ titleQuery, locationQuery }) {
   // Create logosObj for the logos routes.
   // This is made so you don't have touse eval().
   // For more info about not using eval, check MDN:
@@ -48,6 +48,8 @@ function JobsGrid({ titleQuery }) {
   const filteredTitleDataArr = dataArr.filter((item) =>
     item.position.toLowerCase().includes(titleQuery.toLowerCase())
   );
+
+  console.log(`Current location: ${locationQuery}`);
 
   return (
     <main className="main">
