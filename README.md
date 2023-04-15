@@ -10,13 +10,7 @@ This is a solution to the [Devjobs web app challenge on Frontend Mentor](https:/
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -53,24 +47,8 @@ Users should be able to:
 - [React Router](https://reactrouter.com/en/main) - React Router enables "client side routing" in React.
 - [Vite](https://vitejs.dev/) - Build tool for this React application.
 
-### What I learned
-
-**TODO**
-
-### Continued development
-
-**TODO**
-
-### Useful resources
-
-**TODO**
-
 ## Author
 
 - Website - [juanca.org](https://www.juanca.org)
 - Frontend Mentor - [@juancaorg](https://www.frontendmentor.io/profile/juancaorg)
 - Twitter - [@juancaorg](https://twitter.com/juancaorg)
-
-## Acknowledgments
-
-**TODO**
