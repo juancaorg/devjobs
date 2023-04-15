@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./assets/screenshot-light.png)
-![](./assets/screenshot-dark.png)
+![](./src/assets/screenshot-light.png)
+![](./src/assets/screenshot-dark.png)
 
 ### Links
 
