@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub Repository](https://github.com/juancaorg/devjobs)
-- Live Site URL: [devfinder.juanca.dev](https://devjobs.juanca.dev/)
+- Live Site URL: [devjobs.juanca.dev](https://devjobs.juanca.dev/)
 
 ## My process
 
